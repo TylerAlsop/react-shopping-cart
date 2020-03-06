@@ -3,14 +3,14 @@ import { NavLink } from 'react-router-dom';
 import ShoppingContext from "../ShoppingContext";
 
 const Navigation = props => {
-	const {  } = useContext(ShoppingContext);
+	const { cart } = useContext(ShoppingContext);
 
 
 	return (
 		<div className="navigation">
 			<NavLink to="/">Products</NavLink>
 			<NavLink to="/cart">
-				Cart <span>{props.cart.length}</span>
+				Cart <span>{cart.length}</span>
 			</NavLink>
 		</div>
 	);

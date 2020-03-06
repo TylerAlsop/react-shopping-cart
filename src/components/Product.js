@@ -4,7 +4,7 @@ import ShoppingContext from "../ShoppingContext";
 
 
 const Product = props => {
-	const {  } = useContext(ShoppingContext);
+	const { addItem } = useContext(ShoppingContext);
 
 
 	return (
@@ -15,7 +15,7 @@ const Product = props => {
 
 			<p className="price">${props.product.price}</p>
 
-			<button onClick={() => props.addItem(props.product)}>
+			<button onClick={() => addItem(props.product)}>
 				Add to cart
 			</button>
 		</div>
