@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import ShoppingContext from "../ShoppingContext";
+// import ShoppingContext from "../contexts/ProductContext";
 
 
 
 const Item = props => {
-	const {  } = useContext(ShoppingContext);
+	// const {  } = useContext(ShoppingContext);
 
 	return (
 		<div className="shopping-cart_item">

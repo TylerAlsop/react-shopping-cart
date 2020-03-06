@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import ShoppingContext from "../ShoppingContext";
+import ProductContext from "../contexts/ProductContext";
 
 
 
 const Product = props => {
-	const { addItem } = useContext(ShoppingContext);
+	const { addItem } = useContext(ProductContext);
 
 
 	return (

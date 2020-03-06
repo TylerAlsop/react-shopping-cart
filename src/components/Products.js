@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ShoppingContext from "../ShoppingContext";
+import ProductContext from "../contexts/ProductContext";
 
 
 
@@ -7,7 +7,7 @@ import ShoppingContext from "../ShoppingContext";
 import Product from './Product';
 
 const Products = props => {
-	const { products, addItem } = useContext(ShoppingContext);
+	const { products, addItem } = useContext(ProductContext);
 
 
 	return (
