@@ -14,12 +14,13 @@ function App() {
 	const [cart, setCart] = useState([]);
 
 	const addItem = item => {
+		console.log("Item in addItem()", item)
 		// add the given item to the cart
 		setCart(...cart, item)
 	};
 
 	return (
-		<ShoppingContext.Provider>
+		<ShoppingContext.Provider value={{ data: data}}>
 			<div className="App">
 				<Navigation cart={cart} />
 
